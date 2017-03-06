@@ -1,0 +1,27 @@
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">UI Basics</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Adam Kucharik</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+—————
+UI Design
+UI design for screens is all about communication. Clearly communicating the meaning and relationships of the visual symbols is what makes a UI design successful. While this is easy to say, it can be quite challenging to do without a lot of experience or without a lot of usage data. Luckily there are some guidelines, principles, and tools to help you design a UI that communicates clearly.
+
+—————
+Should I bother reading further?
+Before going any further, please understand that this website is for people who have to make UI decisions quickly and without much usage data, and are primarily focused on users’ needs. It’s not for those making decisions based on A/B, multivariate, or any other kind of testing, and it’s definitely not for those trying to manipulate users’ actions. The goal of this site is to help UI designers circumvent avoidable mistakes and quickly reach a reasonably clear and user-friendly design.
+
+—————
+Step 1: Know Thy Content & Thy Users
+There’s no way around it. If you don’t have a comprehensive understanding of the content and the users to which you’re trying to communicate that content, you won’t be able to go any further without making significant mistakes. In order to make a UI design decision that is other than random or your best guess, you must know the ins and outs of the content and how users will consume that content. For example, if you need to you need to decide the order in which to display three groups of content, you should ask several questions:
+
+	1.	What is the relationship between these three groups of content? Do they share a parent? Is their relationship sequential, strong, weak, or non-existent? 
+	2.	What about the content’s relationships are you trying to communicate to users? What do users need to clearly understand in order to make an informed decision or take an action.
+	3.	Is one more important or consumed more frequently by the majority of users in the majority of use cases? 
+
+
+
+ have a deep understanding of the content that you’re trying to represent on screen. How could you visually represent the concept of [insert good example here] if you don’t understand that relationship to being with?
+
+
+
+
+Other Bits
+Ideally, the best communication possible given the current circumstances.

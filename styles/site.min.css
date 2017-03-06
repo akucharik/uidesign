@@ -1,0 +1,83 @@
+.letters-equal,
+.letters-horizontal,
+.letters-vertical {
+    font-size: 2.0em;
+    height: 12.0em;
+    line-height: 1;
+    position: relative;
+}
+
+
+.letter {
+    display: inline-block;
+    padding: 2.0em;
+    text-align: center;
+    width: 1.0em;
+}
+
+.letters-equal .letter {
+    
+}
+
+.letters-horizontal .i {
+    padding-right: 0;
+}
+
+.letters-horizontal .n {
+    padding-left: 0;
+}
+
+.letters-horizontal .t {
+    padding-right: 0;
+}
+
+.letters-horizontal .o {
+    padding-left: 0;
+}
+
+
+.align-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.valign-middle {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.letters-vertical .i {
+    padding-bottom: 0;
+}
+
+.letters-vertical .n {
+    padding-bottom: 0;
+}
+
+.letters-vertical .t {
+    padding-top: 0;
+}
+
+.letters-vertical .o {
+    padding-top: 0;
+}
+
+.forms-unclear {
+    padding-right: 2.0em;
+}
+
+.forms-unclear label, 
+.forms-unclear input {
+    margin: 0.5em 0;
+}
+
+.forms-clear {
+    padding-left: 2.0em;
+}
+
+.forms-clear label {
+    margin-top: 0.5em;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="copyright" content="Adam Kucharik">
+    <meta name="description" content="Learn the fundamentals to apply to any user interface design.">
+    <meta name="keywords" content="design, usability, user interface, user experience, ui, ux">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Fundamentals of User Interface Design" />
+    <meta property="og:description" content="Learn the fundamentals to apply to any user interface design." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akucharik.github.io/uifundamentals/" />
+	<title>Oculo - A simple and intuitive JavaScript 2D virtual camera for animating HTML within a frame</title>
+    <script src="https://use.edgefonts.net/source-sans-pro:n4,i4,n6,i6,n7,i7.js"></script>
+    <link type="text/css" href="styles/foundation.min.css" rel="stylesheet" />
+    <link type="text/css" href="styles/site.min.css" rel="stylesheet" />
+</head>
+<body>    
+    <a id="anchorTop"></a>
+    <div class="home-banner-bkgd">
+        <div id="homeBannerCircles" class="home-banner-circles"></div>
+        <nav class="top-bar">
+            <div class="row columns top-bar-row">
+                <div class="top-bar-left">
+                    <ul class="menu">
+                        <li><a id="navDemo" href="#anchorDemo">Grouping</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="columns">
+                <h1>Fundamentals of User Interface Design</h1>
+                <p>The fundamentals of user interface design are a science. 
+                    They can be learned by anyone, applied to any user interface, and always improve the ease in which that interface is consumed. 
+                    How can I make such an broad statement like this? Because we're human, and for the most part we all function in a very similar way.</p>
+            </div>
+        </div>
+        
+        <div class="home-banner">
+            <section class="home-banner-section">
+                <div class="column-full">
+                    <div class="row">
+                        <div class="columns small-12">
+                            <h2>Grouping</h2>
+                            <p>Grouping is a fundamental tool for creating content relationships and designing user interfaces that are are intuitive. 
+                                When properly used, grouping helps to clearly communicate meaning by giving users visual cues about content relationships and reducing the amount of mental effort used to consume content.
+                                Let's take a look at a basic example of grouping letters and see how it drastically affects the meaning of the content.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="columns small-12 large-4">
+                            <div class="row columns">
+                                <h3>No Grouping</h3>
+                                <p>Even spacing gives no visual grouping cues.</p>
+                            </div>
+                            <div class="row letters-equal">
+                                <div class="valign-middle">
+                                    <div>
+                                        <span class="letter i">i</span>
+                                        <span class="letter n">n</span>
+                                    </div>
+                                    <div>
+                                        <span class="letter t">t</span>
+                                        <span class="letter o">o</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns small-12 large-4">
+                            <div class="row columns">
+                                <h3>Horizontal Grouping</h3>
+                                <p>Uneven spacing that creates clear horizontal groups.</p>
+                            </div>
+                            <div class="row letters-horizontal">
+                                <div class="align-center">
+                                    <div>
+                                        <span class="letter i">i</span>
+                                        <span class="letter n">n</span>
+                                    </div>
+                                    <div>
+                                        <span class="letter t">t</span>
+                                        <span class="letter o">o</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns small-12 large-4">
+                            <div class="row columns">
+                                <h3>Vertical Grouping</h3>
+                                <p>Uneven spacing that creates clear vertical groups.</p>
+                            </div>
+                            <div class="row letters-vertical">
+                                <div class="valign-middle">
+                                    <div>
+                                        <span class="letter i">i</span>
+                                        <span class="letter n">n</span>
+                                    </div>
+                                    <div>
+                                        <span class="letter t">t</span>
+                                        <span class="letter o">o</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="columns small-12">
+                            <p>Unfortunately grouping is often overlooked in the more subtle aspects of user interface design, and content relationships become either weak or misleading. 
+                                Weak content relationships directly impact usability and cause consumers to expend more mental effort figuring out what is being communicated.
+                                Here's a common example &mdash; forms.</p>
+                        </div>
+                    </div>
+                        
+                    <div class="row forms">
+                        <div class="columns small-12 large-6 forms-unclear">
+                            <h3>Ambiguous Grouping</h3>
+                            <p>Even spacing causes users to question if the text belongs to the form field above or below it.</p>
+                            <label>Name</label>
+                            <input type="text">
+
+                            <label>Age</label>
+                            <input type="text">
+
+                            <label>Height</label>
+                            <input type="text">
+
+                            <label>Eye color</label>
+                            <input type="text">
+                        </div>
+                        <div class="columns small-12 large-6 forms-clear">
+                            <h3>Clear Grouping</h3>
+                            <p>Varied spacing gives users visual indication that the text is related to the form field below it.</p>
+                            <label>Name</label>
+                            <input type="text">
+
+                            <label>Age</label>
+                            <input type="text">
+
+                            <label>Height</label>
+                            <input type="text">
+
+                            <label>Eye color</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <section>
+            <div class="column-full">
+                <p class="footer-copyright">&copy; <span id="copyrightYear">2017</span> All rights reserved. Made by <a href="https://github.com/akucharik"><i class="fa fa-github footer-github" aria-hidden="true"></i>akucharik</a>.</p>
+            </div>
+        </section>
+    </footer>
+    
+    <script type="text/javascript" src="scripts/TweenMax.min.js"></script>
+    <script type="text/javascript" src="scripts/ScrollToPlugin.js"></script>
+    <script type="text/javascript" src="scripts/site.min.js"></script>
+</body>
+</html>
