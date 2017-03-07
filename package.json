@@ -3,7 +3,7 @@
     "name" : "Adam Kucharik",
     "email" : "akucharik@gmail.com"
   },
-  "description": "",
+  "description": "Learn the fundamentals of visual user interface design.",
   "homepage": "https://akucharik.github.io/uidesign/",
     "keywords": [
     "UI",
@@ -12,7 +12,7 @@
   ],
   "license": "MIT",
   "main": "index.html",
-  "name": "UI Design",
+  "name": "FundamentalsOfVisualUserInterfaceDesign",
   "repository": {
     "type": "git",
     "url": "https://github.com/akucharik/uidesign"
@@ -34,7 +34,6 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "foundation-sites": "^6.3.0-rc1",
-    "lodash": "^4.16.6"
+    "foundation-sites": "^6.3.0-rc1"
   }
 }

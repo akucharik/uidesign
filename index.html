@@ -12,157 +12,230 @@
     <meta property="og:description" content="Learn the fundamentals to apply to any user interface design." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://akucharik.github.io/uifundamentals/" />
-	<title>Oculo - A simple and intuitive JavaScript 2D virtual camera for animating HTML within a frame</title>
+	<title>Fundamentals of Visual User Interface Design</title>
     <script src="https://use.edgefonts.net/source-sans-pro:n4,i4,n6,i6,n7,i7.js"></script>
-    <link type="text/css" href="styles/foundation.min.css" rel="stylesheet" />
     <link type="text/css" href="styles/site.min.css" rel="stylesheet" />
 </head>
-<body>    
-    <a id="anchorTop"></a>
-    <div class="home-banner-bkgd">
-        <div id="homeBannerCircles" class="home-banner-circles"></div>
-        <nav class="top-bar">
-            <div class="row columns top-bar-row">
-                <div class="top-bar-left">
-                    <ul class="menu">
-                        <li><a id="navDemo" href="#anchorDemo">Grouping</a></li>
-                    </ul>
+<body>
+    <div class="section home-banner">
+        <section class="row">
+                <h1 class="columns small-12 site-title">Fundamentals <span class="site-title-of">of</span><br/>
+                    Visual User Interface Design</h1>
+                <div class="columns small-12">
+                    <p class="site-description">The fundamentals of visual user interface design are not complicated. 
+                        They can be learned by anyone, applied to any visual user interface, and nearly always improve the ease in which that interface is consumed. 
+                        How can we make such a broad statement like this? Because we're human, and for the most part we all function in a similar way.</p>
                 </div>
-            </div>
-        </nav>
-
+        </section>
+    </div>
+    
+    <div class="section">
         <div class="row">
-            <div class="columns">
-                <h1>Fundamentals of User Interface Design</h1>
-                <p>The fundamentals of user interface design are a science. 
-                    They can be learned by anyone, applied to any user interface, and always improve the ease in which that interface is consumed. 
-                    How can I make such an broad statement like this? Because we're human, and for the most part we all function in a very similar way.</p>
+            <div class="columns small-12">
+                <h2>Grouping</h2>
+                <p>Grouping is the process of creating visual relationships. 
+                    When properly used, grouping helps to clearly communicate meaning by giving users visual cues that mirror the content's conceptual relationships. 
+                    These cues reduce the amount of mental effort used to figure out those relationships and understand the content.
+                    Let's take a look at a basic example of grouping letters and see how it drastically affects the meaning of the content.</p>
             </div>
         </div>
         
-        <div class="home-banner">
-            <section class="home-banner-section">
-                <div class="column-full">
-                    <div class="row">
-                        <div class="columns small-12">
-                            <h2>Grouping</h2>
-                            <p>Grouping is a fundamental tool for creating content relationships and designing user interfaces that are are intuitive. 
-                                When properly used, grouping helps to clearly communicate meaning by giving users visual cues about content relationships and reducing the amount of mental effort used to consume content.
-                                Let's take a look at a basic example of grouping letters and see how it drastically affects the meaning of the content.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="columns small-12 large-4">
-                            <div class="row columns">
-                                <h3>No Grouping</h3>
-                                <p>Even spacing gives no visual grouping cues.</p>
-                            </div>
-                            <div class="row letters-equal">
-                                <div class="valign-middle">
-                                    <div>
-                                        <span class="letter i">i</span>
-                                        <span class="letter n">n</span>
-                                    </div>
-                                    <div>
-                                        <span class="letter t">t</span>
-                                        <span class="letter o">o</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columns small-12 large-4">
-                            <div class="row columns">
-                                <h3>Horizontal Grouping</h3>
-                                <p>Uneven spacing that creates clear horizontal groups.</p>
-                            </div>
-                            <div class="row letters-horizontal">
-                                <div class="align-center">
-                                    <div>
-                                        <span class="letter i">i</span>
-                                        <span class="letter n">n</span>
-                                    </div>
-                                    <div>
-                                        <span class="letter t">t</span>
-                                        <span class="letter o">o</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columns small-12 large-4">
-                            <div class="row columns">
-                                <h3>Vertical Grouping</h3>
-                                <p>Uneven spacing that creates clear vertical groups.</p>
-                            </div>
-                            <div class="row letters-vertical">
-                                <div class="valign-middle">
-                                    <div>
-                                        <span class="letter i">i</span>
-                                        <span class="letter n">n</span>
-                                    </div>
-                                    <div>
-                                        <span class="letter t">t</span>
-                                        <span class="letter o">o</span>
-                                    </div>
-                                </div>
+        <div class="row">
+            <div class="columns small-12">
+                <h3>Basic Examples</h3>
+            </div>
+            <div class="columns small-12 large-4">
+                <div class="media-object">
+                    <div class="media-object-section">
+                        <div class="thumbnail">
+                            <div class="icon letters-equal-icon">
+                                <div class="icon-symbol is-1"></div>
+                                <div class="icon-symbol is-2"></div>
+                                <div class="icon-symbol is-3"></div>
+                                <div class="icon-symbol is-4"></div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="row">
-                        <div class="columns small-12">
-                            <p>Unfortunately grouping is often overlooked in the more subtle aspects of user interface design, and content relationships become either weak or misleading. 
-                                Weak content relationships directly impact usability and cause consumers to expend more mental effort figuring out what is being communicated.
-                                Here's a common example &mdash; forms.</p>
-                        </div>
+                    <div class="media-object-section">
+                        <h4>No Grouping</h4>
+                        <p>Even spacing gives no visual grouping cues.</p>
                     </div>
-                        
-                    <div class="row forms">
-                        <div class="columns small-12 large-6 forms-unclear">
-                            <h3>Ambiguous Grouping</h3>
-                            <p>Even spacing causes users to question if the text belongs to the form field above or below it.</p>
-                            <label>Name</label>
-                            <input type="text">
-
-                            <label>Age</label>
-                            <input type="text">
-
-                            <label>Height</label>
-                            <input type="text">
-
-                            <label>Eye color</label>
-                            <input type="text">
-                        </div>
-                        <div class="columns small-12 large-6 forms-clear">
-                            <h3>Clear Grouping</h3>
-                            <p>Varied spacing gives users visual indication that the text is related to the form field below it.</p>
-                            <label>Name</label>
-                            <input type="text">
-
-                            <label>Age</label>
-                            <input type="text">
-
-                            <label>Height</label>
-                            <input type="text">
-
-                            <label>Eye color</label>
-                            <input type="text">
+                </div>
+                <div class="row">
+                    <div class="columns small-12">
+                        <div class="zone letters-equal">
+                            <div class="valign-middle">
+                                <div>
+                                    <span class="letter i">i</span>
+                                    <span class="letter n">n</span>
+                                </div>
+                                <div>
+                                    <span class="letter t">t</span>
+                                    <span class="letter o">o</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            <div class="columns small-12 large-4">
+                <div class="media-object">
+                    <div class="media-object-section">
+                        <div class="thumbnail">
+                            <div class="icon letters-horizontal-icon">
+                                <div class="icon-symbol is-1"></div>
+                                <div class="icon-symbol is-2"></div>
+                                <div class="icon-symbol is-3"></div>
+                                <div class="icon-symbol is-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-object-section">
+                        <h4>Horizontal Grouping</h4>
+                        <p>Close horizontal spacing creates clear groups.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="columns small-12">
+                        <div class="zone letters-horizontal">
+                            <div class="valign-middle">
+                                <div>
+                                    <span class="letter i">i</span>
+                                    <span class="letter n">n</span>
+                                </div>
+                                <div>
+                                    <span class="letter t">t</span>
+                                    <span class="letter o">o</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns small-12 large-4">
+                <div class="media-object">
+                    <div class="media-object-section">
+                        <div class="thumbnail">
+                            <div class="icon letters-vertical-icon">
+                                <div class="icon-symbol is-1"></div>
+                                <div class="icon-symbol is-2"></div>
+                                <div class="icon-symbol is-3"></div>
+                                <div class="icon-symbol is-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-object-section">
+                        <h4>Vertical Grouping</h4>
+                        <p>Close vertical spacing creates clear groups.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="columns small-12">
+                        <div class="zone letters-vertical">
+                            <div class="valign-middle">
+                                <div>
+                                    <span class="letter i">i</span>
+                                    <span class="letter n">n</span>
+                                </div>
+                                <div>
+                                    <span class="letter t">t</span>
+                                    <span class="letter o">o</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                
+                
+                
+                
+                
+    <div class="section forms">
+        <div class="row">
+            <div class="columns small-12">
+                <h3>Forms</h3>
+                <p>Unfortunately grouping is often overlooked in many aspects of user interface design, and content relationships become either weak or misleading. 
+                    Weak content relationships directly impact usability and cause consumers to expend more mental effort figuring out what is being communicated.
+                    Here's a common example &mdash; forms.</p>
+            </div>
+            <div class="columns small-12 large-4 forms-misleading">
+                <h4>Misleading Grouping</h4>
+                <p>Notice how the text describing the form field is closer to the form field <em>above</em> it. Confusion arises when visual relationships do not match the content's conceptual relationships.</p>
+                <div class="zone">
+                    <label>Name</label>
+                    <input type="text">
+
+                    <label>Age</label>
+                    <input type="text">
+
+                    <label>Height</label>
+                    <input type="text">
+
+                    <label>Eye color</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="columns small-12 large-4 forms-ambiguous">
+                <h4>Ambiguous Grouping</h4>
+                <p>Even spacing creates no visual relationships and requires users to expend more mental effort figuring out if the text is associated with the form field <em>above</em> or <em>below</em> it.</p>
+                <div class="zone">
+                    <label>Name</label>
+                    <input type="text">
+
+                    <label>Age</label>
+                    <input type="text">
+
+                    <label>Height</label>
+                    <input type="text">
+
+                    <label>Eye color</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="columns small-12 large-4 forms-clear">
+                <h4>Clear Grouping</h4>
+                <p>Clear grouping creates visual relationships that accurately reflect the underlying conceptual relationships. 
+                    In this case the text is related to the form field <em>below</em> it.</p>
+                <div class="zone">
+                    <label>Name</label>
+                    <input type="text">
+
+                    <label>Age</label>
+                    <input type="text">
+
+                    <label>Height</label>
+                    <input type="text">
+
+                    <label>Eye color</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </div>    
+            
+    <div class="section">
+        <div class="row">
+            <div class="columns small-12">
+                <h3>Guiding Questions</h3>
+                <p>Sometimes questions asked in different ways can be helpful when sorting out the design of visual user interfaces. Below are a few to get you started.</p>
+                <ol>
+                    <li>When elements have strong conceptual relationships, are those elements tightly coupled in a visual group?</li>
+                    <li>When elements have weak conceptual relationships, are those elements loosely coupled in a group or not coupled at all?</li>
+                    <li>Does the visual grouping of elements accurately reflect the conceptual relationships of the content?</li>
+                </ol>
+            </div>
         </div>
     </div>
     
-    <footer class="footer">
-        <section>
-            <div class="column-full">
+    <footer class="section footer">
+        <div class="row">
+            <div class="columns small-12">
                 <p class="footer-copyright">&copy; <span id="copyrightYear">2017</span> All rights reserved. Made by <a href="https://github.com/akucharik"><i class="fa fa-github footer-github" aria-hidden="true"></i>akucharik</a>.</p>
             </div>
-        </section>
+        </div>
     </footer>
-    
-    <script type="text/javascript" src="scripts/TweenMax.min.js"></script>
-    <script type="text/javascript" src="scripts/ScrollToPlugin.js"></script>
-    <script type="text/javascript" src="scripts/site.min.js"></script>
 </body>
 </html>
