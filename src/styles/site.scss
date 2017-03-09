@@ -11,18 +11,18 @@
 //@include foundation-accordion-menu;
 //@include foundation-badge;
 //@include foundation-breadcrumbs;
-@include foundation-button-group;
+//@include foundation-button-group;
 //@include foundation-callout;
 //@include foundation-card;
 //@include foundation-close-button;
-@include foundation-menu;
+//@include foundation-menu;
 //@include foundation-menu-icon;
 //@include foundation-drilldown-menu;
 //@include foundation-dropdown;
 //@include foundation-dropdown-menu;
 //@include foundation-responsive-embed;
 @include foundation-label;
-//@include foundation-media-object;
+@include foundation-media-object;
 //@include foundation-off-canvas;
 //@include foundation-orbit;
 //@include foundation-pagination;
@@ -31,12 +31,12 @@
 //@include foundation-sticky;
 //@include foundation-reveal;
 //@include foundation-switch;
-@include foundation-table;
+//@include foundation-table;
 //@include foundation-tabs;
 //@include foundation-thumbnail;
 //@include foundation-title-bar;
 //@include foundation-tooltip;
-@include foundation-top-bar;
+//@include foundation-top-bar;
 @include foundation-visibility-classes;
 //@include foundation-float-classes;
 @import 'vendor/font-awesome';
@@ -68,7 +68,7 @@ h1 {
 h2 {
     font-weight: 400;
     line-height: 1.1;
-    margin-top: $subheader-margin-top;
+    //margin-top: $subheader-margin-top;
 }
 
 section {
@@ -226,17 +226,6 @@ a {
     }
 }
 
-.footer {
-    background-color: #bdaec6;
-    
-    &-copyright {
-        margin-bottom: 0;
-    }
-    
-    &-github {
-        margin-right: 0.07rem;
-    }
-}
 
 
 
@@ -246,20 +235,8 @@ a {
 
 
 
-
-
-h1 {
-    
-}
-
-h3 {
-    font-size: 26px;
-    line-height: 1;
-}
-
-h4 {
-    font-size: 22px;
-    line-height: 1;
+li {
+    margin-bottom: 0.5rem;
 }
 
 .section {
@@ -291,9 +268,11 @@ h4 {
 
 /* only on large screens */
 .site-description {
-    margin-left: auto;
-    margin-right: auto;
-    width: 38em;
+    @include breakpoint(large) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 38em;
+    }
 }
 
 .icon {
@@ -314,9 +293,19 @@ h4 {
 
 .zone {
     background-color: #ddd;
-    margin-bottom: 1.0em;
+    margin-bottom: 2.0rem;
     padding: 2.5em;
     position: relative;
+    
+    @include breakpoint(large) {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    & > label:first-child {
+        margin-top: 0;
+    }
 }
 
 
@@ -385,6 +374,19 @@ h4 {
 }
 
 
+
+.letters {
+    margin-top: 0.6rem;
+    
+//    @include breakpoint(large) {
+//        margin-bottom: 1.0rem;
+//    }
+    
+    & p {
+        line-height: 1.2;
+    }
+}
+
 .letters-equal,
 .letters-horizontal,
 .letters-vertical {
@@ -394,7 +396,6 @@ h4 {
     padding: 0;
     text-align: center;
 }
-
 
 .letter {
     display: inline-block;
@@ -435,53 +436,45 @@ h4 {
 
 .forms {
     background-color: #f3f3f3;
+    
+    & .zone {
+        @include breakpoint(large) {
+            height: 28.0em;
+        }
+    }
+    
+    &-misleading {
+        & label {
+            margin-bottom: 1.5em;
+        }
+        
+        & input {
+            margin: 0.5em 0;
+        }
+    }
+    
+    &-ambiguous {
+        & label,
+        & input {
+            margin: 0.5em 0;
+        }
+    }
+    
+    &-clear {
+        & label {
+            margin-top: 0.75em;
+        }
+    }
 }
 
-/* only on large screens */
-.forms .zone {
-    height: 28.0em;
-}
-
-.zone > label:first-child {
-    margin-top: 0;
-}
-
-/* only on large screens */
-.forms-misleading {
-    /*padding-right: 2.0em;*/
-}
-
-.forms-misleading label {
-    margin-bottom: 1.5em;
-}
-
-.forms-misleading input {
-    margin: 0.5em 0;
-}
-
-/* only on large screens */
-.forms-ambiguous {
-    /*padding-right: 2.0em;*/
-}
-
-.forms-ambiguous label, 
-.forms-ambiguous input {
-    margin: 0.5em 0;
-}
-
-/* only on large screens */
-.forms-clear {
-    /*padding-left: 2.0em;*/
-}
-
-.forms-clear label {
-    margin-top: 0.75em;
-}
-
-footer {
+.footer {
     background-color: #eee;
-}
-
-.footer-copyright {
-    margin: 0;
+    
+    &-copyright {
+        margin-bottom: 0;
+    }
+    
+    &-github {
+        margin-right: 0.07rem;
+    }
 }
