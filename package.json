@@ -1,11 +1,11 @@
 {
   "author": {
-    "name" : "Adam Kucharik",
-    "email" : "akucharik@gmail.com"
+    "name": "Adam Kucharik",
+    "email": "akucharik@gmail.com"
   },
   "description": "Learn the fundamentals of visual user interface design.",
   "homepage": "https://akucharik.github.io/uidesign/",
-    "keywords": [
+  "keywords": [
     "UI",
     "user interface design",
     "design"
@@ -34,6 +34,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "foundation-sites": "^6.3.0-rc1"
+    "foundation-sites": "^6.3.0-rc1",
+    "jquery": "^3.1.1"
   }
 }

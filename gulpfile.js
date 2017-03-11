@@ -29,8 +29,8 @@ var config = {
         source: './src/scripts/site.js',
         vendor: {
             source: [
-                './src/scripts/vendor/ScrollToPlugin.js',
-                './src/scripts/vendor/TweenMax.min.js'
+                './node_modules/jquery/dist/jquery.min.js',
+                './node_modules/foundation-sites/dist/js/foundation.min.js'
             ]
         }
     },

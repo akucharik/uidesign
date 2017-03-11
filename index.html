@@ -18,7 +18,7 @@
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
 	<title>Fundamentals of Visual User Interface Design</title>
-    <script src="https://use.edgefonts.net/source-sans-pro:n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="https://use.edgefonts.net/source-sans-pro:n4,i4,n6,i6,n7,i7;droid-serif.js"></script>
     <link type="text/css" href="styles/site.min.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -28,9 +28,9 @@
                 <h1 class="columns small-12 site-title">Fundamentals <span class="site-title-of">of</span><br/>
                     Visual User Interface Design</h1>
                 <div class="columns small-12">
-                    <p class="site-description">The fundamentals of visual user interface design are not complicated. 
-                        They can be learned by anyone, applied to any visual user interface, and nearly always improve the ease in which that interface is consumed. 
-                        How can we make such a broad statement like this? Because we're human, and for the most part we all function in a similar way.</p>
+                    <p class="site-description">The fundamentals of visual user interface design are fairly straightforward. 
+                        They can be learned by nearly anyone, applied to nearly any visual user interface, and usually improve the ease in which that interface is consumed. 
+                        How can such wide-reaching claims be true? Because of one simple fact&mdash;we're all human, and for the most part we function in a similar way.</p>
                 </div>
         </section>
     </div>
@@ -38,18 +38,34 @@
     <div class="section">
         <div class="row">
             <div class="columns small-12">
-                <h1>Grouping</h1>
-                <p>Grouping is the process of creating visual relationships. 
-                    When properly used, grouping helps to clearly communicate meaning by giving users visual cues that mirror the content's conceptual relationships. 
-                    These cues reduce the amount of mental effort used to figure out those relationships and understand the content.
-                    Let's take a look at a basic example of grouping letters and see how it drastically affects the meaning of the content.</p>
-                <h2>Effects of Grouping Cues</h2>
+                <h1>Visual Content Is an Idea</h1>
+                <p>Before learning the fundamental principles and tools to use when designing visual user interfaces, there is a critical concept to keep in mind:</p>
+                <div class="callout">
+                    <p>The visual representation of content is most effective when it accurately reflects the underlying conceptual meaning of that content.</p>
+                </div>
+                <p>This means that a visual user interface is nothing more than a medium being used to communicate and interact with an idea, and that idea exists and can be understood without any visual representation. 
+                    Therefore, a detailed understanding of the idea is necessary in order to create a visual representation that accurately communicates that idea.</p>
             </div>
         </div>
+    </div>
+    
+    <div class="section grouping">
+        <div class="row">
+            <div class="columns small-12">
+                <h1>Grouping</h1>
+                <p>One principle of visual user interface design is grouping.
+                    Grouping is simply the process of creating visual relationships. 
+                    When properly used, grouping helps to communicate meaning by giving users visual cues that mirror the content's conceptual relationships. 
+                    These cues reduce the amount of mental effort used to figure out those relationships and understand the content.</p>
+
         
-        <div class="row letters">
-            <div class="columns small-12 large-4">
-                <div class="media-object">
+        <div class="subsection letters" data-equalizer data-equalize-on="large">
+            <div class="columns small-12">
+                <h2>Effects of Grouping Cues</h2>
+                <p>Let's take a look at a basic example of grouping letters to see how it drastically affects the meaning of the content.</p>
+            </div>
+            <div class="letters-equal">
+                <!--<div class="media-object">
                     <div class="media-object-section">
                         <div class="thumbnail">
                             <div class="icon letters-equal-icon">
@@ -61,25 +77,27 @@
                         </div>
                     </div>
                     <div class="media-object-section">
-                        <h3>No Grouping</h3>
-                        <p>Even spacing gives no visual grouping cues.</p>
+                        <h3>None</h3>
+                        <p>Even spacing gives no visual cues about the relationships between letters.</p>
                     </div>
-                </div>
-                <div class="zone letters-equal">
-                    <div class="valign-middle">
+                </div>-->
+                <h3>No Grouping</h3>
+                <p data-equalizer-watch>Even spacing provides no clear visual relationships between letters.</p>
+                <div class="zone letters-example">
+                    <div class="letters-example-content">
                         <div>
-                            <span class="letter i">i</span>
-                            <span class="letter n">n</span>
+                            <span class="letter letter-1">i</span>
+                            <span class="letter letter-2">n</span>
                         </div>
                         <div>
-                            <span class="letter t">t</span>
-                            <span class="letter o">o</span>
+                            <span class="letter letter-3">t</span>
+                            <span class="letter letter-4">o</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="columns small-12 large-4">
-                <div class="media-object">
+            <div class="letters-horizontal">
+                <!--<div class="media-object">
                     <div class="media-object-section">
                         <div class="thumbnail">
                             <div class="icon letters-horizontal-icon">
@@ -91,25 +109,27 @@
                         </div>
                     </div>
                     <div class="media-object-section">
-                        <h3>Horizontal Grouping</h3>
-                        <p>Close horizontal spacing creates clear groups.</p>
+                        <h3>Horizontal</h3>
+                        <p>Tight horizontal spacing creates clear relationships between letters.</p>
                     </div>
-                </div>
-                <div class="zone letters-horizontal">
-                    <div class="valign-middle">
+                </div>-->
+                <h3>Horizontal Grouping</h3>
+                <p data-equalizer-watch>Tight horizontal spacing creates clear relationships between letters.</p>
+                <div class="zone letters-example">
+                    <div class="letters-example-content">
                         <div>
-                            <span class="letter i">i</span>
-                            <span class="letter n">n</span>
+                            <span class="letter letter-1">i</span>
+                            <span class="letter letter-2">n</span>
                         </div>
                         <div>
-                            <span class="letter t">t</span>
-                            <span class="letter o">o</span>
+                            <span class="letter letter-3">t</span>
+                            <span class="letter letter-4">o</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="columns small-12 large-4">
-                <div class="media-object">
+            <div class="letters-vertical">
+                <!--<div class="media-object">
                     <div class="media-object-section">
                         <div class="thumbnail">
                             <div class="icon letters-vertical-icon">
@@ -121,41 +141,41 @@
                         </div>
                     </div>
                     <div class="media-object-section">
-                        <h3>Vertical Grouping</h3>
-                        <p>Close vertical spacing creates clear groups.</p>
+                        <h3>Vertical</h3>
+                        <p>Tight vertical spacing creates different relationships between letters.</p>
                     </div>
-                </div>
-                <div class="zone letters-vertical">
-                    <div class="valign-middle">
+                </div>-->
+                <h3>Vertical Grouping</h3>
+                <p data-equalizer-watch>Tight vertical spacing creates clear but different relationships between letters.</p>
+                <div class="zone letters-example">
+                    <div class="letters-example-content">
                         <div>
-                            <span class="letter i">i</span>
-                            <span class="letter n">n</span>
+                            <span class="letter letter-1">i</span>
+                            <span class="letter letter-2">n</span>
                         </div>
                         <div>
-                            <span class="letter t">t</span>
-                            <span class="letter o">o</span>
+                            <span class="letter letter-3">t</span>
+                            <span class="letter letter-4">o</span>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="columns small-12">
+                <p>The example above illustrates that grouping can be used to drastically manipulate the meaning of content, but most of the time it's used to convey simpler content relationships.</p>
+            </div>
         </div>
-    </div>
-                
-                
-                
-                
-                
-    <div class="section forms">
-        <div class="row">
+        
+        <div class="subsection forms" data-equalizer data-equalize-on="large">
             <div class="columns small-12">
                 <h2>Grouping Cues in Basic Forms</h2>
                 <p>Unfortunately grouping is often overlooked in many aspects of user interface design, and content relationships become either weak or misleading. 
                     Weak content relationships directly impact usability and cause consumers to expend more mental effort figuring out what is being communicated.
-                    Here's a common example &mdash; forms.</p>
+                    Here's a common example&mdash;forms.</p>
             </div>
             <div class="columns small-12 large-4 forms-misleading">
                 <h3>Misleading Grouping</h3>
-                <p>Notice how the text describing the form field is closer to the form field <em>above</em> it. Confusion arises when visual relationships do not match the content's conceptual relationships.</p>
+                <p data-equalizer-watch>Notice how the text describing the form field is closer to the form field <em>above</em> it. Confusion arises when visual relationships do not match the content's conceptual relationships.</p>
                 <div class="zone">
                     <label>Name</label>
                     <input type="text">
@@ -172,7 +192,7 @@
             </div>
             <div class="columns small-12 large-4 forms-ambiguous">
                 <h3>Ambiguous Grouping</h3>
-                <p>Even spacing creates no visual relationships and requires users to expend more mental effort figuring out if the text is associated with the form field <em>above</em> or <em>below</em> it.</p>
+                <p data-equalizer-watch>Even spacing creates no visual relationships and requires users to expend more mental effort figuring out if the text is associated with the form field <em>above</em> or <em>below</em> it.</p>
                 <div class="zone">
                     <label>Name</label>
                     <input type="text">
@@ -189,7 +209,7 @@
             </div>
             <div class="columns small-12 large-4 forms-clear">
                 <h3>Clear Grouping</h3>
-                <p>Clear grouping creates visual relationships that accurately reflect the underlying conceptual relationships. 
+                <p data-equalizer-watch>Clear grouping creates visual relationships that accurately reflect the underlying conceptual relationships. 
                     In this case the text is related to the form field <em>below</em> it.</p>
                 <div class="zone">
                     <label>Name</label>
@@ -205,6 +225,8 @@
                     <input type="text">
                 </div>
             </div>
+        </div>
+                            </div>
         </div>
     </div>    
             
@@ -229,5 +251,9 @@
             </div>
         </div>
     </footer>
+    
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/foundation.min.js"></script>
+    <script type="text/javascript" src="scripts/site.min.js"></script>
 </body>
 </html>

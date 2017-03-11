@@ -46,8 +46,8 @@
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-font-size: 110%;
+$global-width: rem-calc(960);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #692969,
@@ -86,7 +86,7 @@ $print-transparent-backgrounds: true;
 $breakpoints: (
   small: 0,
   medium: 640px,
-  large: 1024px,
+  large: 960px,
   xlarge: 1200px,
   xxlarge: 1440px,
 );
@@ -114,7 +114,7 @@ $header-font-style: normal;
 $font-family-monospace: source-code-pro, Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
 $header-lineheight: 1;
-$header-margin-bottom: 0.4rem;
+$header-margin-bottom: 0.8rem;
 $header-styles: (
   small: (
     'h1': ('font-size': 32),
@@ -127,9 +127,9 @@ $header-styles: (
   medium: (
     'h1': ('font-size': 46),
     'h2': ('font-size': 30),
-    'h3': ('font-size': 28),
-    'h4': ('font-size': 24),
-    'h5': ('font-size': 20),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 20),
+    'h5': ('font-size': 18),
     'h6': ('font-size': 16),
   ),
 );
