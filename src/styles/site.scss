@@ -132,7 +132,7 @@ a {
         padding-bottom: 0;        
     }
     
-    &-subsection {
+    &-subsection {        
         @include flex-grid-row();
         justify-content: center;
 
@@ -243,7 +243,7 @@ li {
     border-top: 0 none;
     border-right: 0 none;
     border-bottom: 0 none;
-    border-left: 6px solid red;
+    border-left: 5px solid red;
     color: #777;
     font-family: droid-serif, serif;
     font-size: 130%;
@@ -262,8 +262,9 @@ li {
 }
 
 .subsection {
-    @include flex-grid-row();
-    margin: 2.0rem -1.875rem 0 !important;
+    margin: 1.5rem 0;
+//    @include flex-grid-row();
+//    margin: 2.0rem -1.875rem 0 !important;
 }
 
 .home-banner {
@@ -316,13 +317,13 @@ li {
 
 .zone {
     background-color: #ddd;
-    margin-bottom: 2.0rem;
-    padding: 2.5em;
+    margin-bottom: 1.5rem;
+    padding: 1.7em 2.0em;
     position: relative;
     
-    @include breakpoint(large) {
-        margin-bottom: 0;
-    }
+//    @include breakpoint(large) {
+//        margin-bottom: 1.0rem;
+//    }
     
     & > label:first-child {
         margin-top: 0;
@@ -394,12 +395,21 @@ li {
 //    left: 70%;
 //}
 
+.idea {
+    &-next {
+        font-size: rem-calc(72);
+        line-height: 1;
+        margin-bottom: -0.5rem;
+        text-align: center;
+    }
+}
+
 .grouping {
     background-color: #f3f3f3;
 }
 
 .letters {
-    @include flex-grid-row();
+    //@include flex-grid-row();
     
     h3 {
         margin-bottom: 0.5rem;
@@ -413,8 +423,17 @@ li {
         font-size: rem-calc(48);// 4.0em;
         height: 6.0em;
         line-height: 1;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 20rem;
         padding: 0;
         text-align: center;
+        
+        @include breakpoint(large) {
+            //max-width: none;
+            margin-left: 0;
+            margin-right: 0;
+        }
         
         &-content {
             @include vertical-center;
@@ -423,19 +442,19 @@ li {
     }
     
     &-equal {
-        @include flex-grid-column(12);
-        
-        @include breakpoint(large) {
-            @include flex-grid-column(4);
-        }
+//        @include flex-grid-column(12);
+//        
+//        @include breakpoint(large) {
+//            @include flex-grid-column(4);
+//        }
     }
     
     &-horizontal {
-        @include flex-grid-column(12);
-        
-        @include breakpoint(large) {
-            @include flex-grid-column(4);
-        }
+//        @include flex-grid-column(12);
+//        
+//        @include breakpoint(large) {
+//            @include flex-grid-column(4);
+//        }
         
         & .letter {
             width: 0.4em;
@@ -448,11 +467,11 @@ li {
     }
     
     &-vertical {
-        @include flex-grid-column(12);
-        
-        @include breakpoint(large) {
-            @include flex-grid-column(4);
-        }
+//        @include flex-grid-column(12);
+//        
+//        @include breakpoint(large) {
+//            @include flex-grid-column(4);
+//        }
         
         & .letter-1,
         & .letter-2 {
@@ -474,14 +493,39 @@ li {
     width: 2.0em;
 }
 
+.word {
+    text-transform: uppercase;
+}
+
 .forms {
     h3 {
         margin-bottom: 0.5rem;
     }
     
-    & .zone {
+//    & .zone {
+//        @include breakpoint(large) {
+//            height: 26.0em;
+//        }
+//    }
+    
+    &-example {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 20rem;
+        
         @include breakpoint(large) {
-            height: 26.0em;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    
+    &-first-name {
+        & label {
+            margin-bottom: 1.0em;
+        }
+        
+        & input {
+            margin: 0.5em 0;
         }
     }
     
