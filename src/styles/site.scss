@@ -1,0 +1,381 @@
+@import 'settings';
+@import 'foundation';
+@include foundation-global-styles;
+//@include foundation-grid;
+@include foundation-flex-grid;
+@include foundation-flex-classes;
+@include foundation-typography;
+@include foundation-forms;
+@include foundation-button;
+//@include foundation-accordion;
+//@include foundation-accordion-menu;
+//@include foundation-badge;
+//@include foundation-breadcrumbs;
+//@include foundation-button-group;
+@include foundation-callout;
+//@include foundation-card;
+//@include foundation-close-button;
+//@include foundation-menu;
+//@include foundation-menu-icon;
+//@include foundation-drilldown-menu;
+//@include foundation-dropdown;
+//@include foundation-dropdown-menu;
+//@include foundation-responsive-embed;
+//@include foundation-label;
+//@include foundation-media-object;
+//@include foundation-off-canvas;
+//@include foundation-orbit;
+//@include foundation-pagination;
+//@include foundation-progress-bar;
+//@include foundation-slider;
+//@include foundation-sticky;
+//@include foundation-reveal;
+//@include foundation-switch;
+//@include foundation-table;
+//@include foundation-tabs;
+//@include foundation-thumbnail;
+//@include foundation-title-bar;
+//@include foundation-tooltip;
+//@include foundation-top-bar;
+@include foundation-visibility-classes;
+//@include foundation-float-classes;
+@import 'vendor/font-awesome';
+
+// Tags
+body {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+
+a {
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+h1 {
+    color: $primary-color;
+}
+
+h2 {
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+section {
+    padding-top: rem-calc(30);
+    padding-bottom: rem-calc(30);
+}
+
+select {
+    background-image: none;
+    padding: 0 0.25rem;
+}
+
+// Structural
+.section {
+    padding: 2.5em 0;
+}
+
+.subsection {
+    margin: 1.5rem 0;
+}
+
+// Misc
+.callout {
+    background-color: transparent;
+    border-top: 0 none;
+    border-right: 0 none;
+    border-bottom: 0 none;
+    border-left: 5px solid $secondary-color;
+    color: #777;
+    font-family: droid-serif, serif;
+    font-size: 130%;
+    font-style: italic;
+    font-weight: 300;
+    margin-left: 2.0rem;
+    -webkit-font-smoothing: antialiased;
+    
+    & > p {
+        line-height: 1.4;
+    }
+}
+
+.scrollto-arrow {
+    color: $tertiary-color;
+    cursor: pointer;
+}
+
+.home-banner {
+    background: #eaeaea url('../images/homeBannerBkgd.jpg') 50% 0 no-repeat; //#e1f0f5 e6edf0
+    border-bottom: 1px solid #ccc;
+    box-shadow: inset 0 -10px 25px -8px rgba(0,0,0,0.15);
+    position: relative;
+    text-align: center;
+    
+    &-logo {
+        margin: 0 auto;
+        width: 296px;
+        
+        @include breakpoint(medium) {
+            width: auto;
+        }
+    }
+    
+    &-description {
+        font-size: 115%;
+        margin: 0.5em 0 1.0em;
+        text-align: left;
+        
+        @include breakpoint(large) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 33em;
+        }
+    }
+}
+
+.zone {
+    background-color: #ddd;
+    margin-bottom: 1.5rem;
+    padding: 1.7em 2.0em;
+    position: relative;
+    
+    & > label:first-child {
+        margin-top: 0;
+    }
+}
+
+//.icon {
+//    background-color: #ddd;
+//    height: 100px;
+//    position: relative;
+//    width: 100px;
+//}
+//
+//.icon-symbol {
+//    background-color: #999;
+//    height: 26px;
+//    position: absolute;
+//    transform: translate(-50%, -50%);
+//    width: 26px;
+//}
+//
+//.letters-equal-icon .is-1 {
+//    top: 30%;
+//    left: 30%;
+//}
+//
+//.letters-equal-icon .is-2 {
+//    top: 30%;
+//    left: 70%;
+//}
+//
+//.letters-equal-icon .is-3 {
+//    top: 70%;
+//    left: 30%;
+//}
+//
+//.letters-equal-icon .is-4 {
+//    top: 70%;
+//    left: 70%;
+//}
+//
+//
+//
+//.letters-horizontal-icon .is-1 {
+//    top: 30%;
+//    left: 35%;
+//}
+//
+//.letters-horizontal-icon .is-2 {
+//    top: 30%;
+//    left: 65%;
+//}
+//
+//.letters-horizontal-icon .is-3 {
+//    top: 70%;
+//    left: 35%;
+//}
+//
+//.letters-horizontal-icon .is-4 {
+//    top: 70%;
+//    left: 65%;
+//}
+//
+//
+//
+//.letters-vertical-icon .is-1 {
+//    top: 35%;
+//    left: 30%;
+//}
+//
+//.letters-vertical-icon .is-2 {
+//    top: 35%;
+//    left: 70%;
+//}
+//
+//.letters-vertical-icon .is-3 {
+//    top: 65%;
+//    left: 30%;
+//}
+//
+//.letters-vertical-icon .is-4 {
+//    top: 65%;
+//    left: 70%;
+//}
+
+.idea {
+    background: linear-gradient(to bottom, $white 20%, #f6f6f6 100%); /* addef3 */
+    border-bottom: 1px solid #eee;
+    
+    &-next {
+        font-size: rem-calc(72);
+        line-height: 1;
+        margin-bottom: -0.5rem;
+        text-align: center;
+    }
+}
+
+.grouping {
+    
+}
+
+.letters {
+    
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+    
+    & p {
+        line-height: 1.2;
+    }
+    
+    &-example {
+        background-color: scale-color($primary-light, $lightness: 20%);
+        font-size: rem-calc(48);
+        height: 6.0em;
+        line-height: 1;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 20rem;
+        padding: 0;
+        text-align: center;
+        
+        @include breakpoint(large) {
+            //max-width: none;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        &-content {
+            @include vertical-center;
+            position: relative;
+        }
+    }
+    
+    &-horizontal {
+        
+        & .letter {
+            width: 0.4em;
+        }
+
+        & .letter-1 {
+            position: relative;
+            left: 0.07em;
+        }
+    }
+    
+    &-vertical {
+        
+        & .letter-1,
+        & .letter-2 {
+            padding-bottom: 0;
+        }
+
+        & .letter-3,
+        & .letter-4 {
+            padding-top: 0;
+        }
+    }
+    
+}
+
+.letter {
+    display: inline-block;
+    padding: 0.6em 0;
+    text-transform: uppercase;
+    width: 2.0em;
+}
+
+.word {
+    text-transform: uppercase;
+}
+
+.forms {
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+    
+    &-example {
+        background-color: scale-color($secondary-light, $lightness: 50%);
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 20rem;
+        
+        @include breakpoint(large) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    
+    &-first-name {
+        & label {
+            margin-bottom: 1.0em;
+        }
+        
+        & input {
+            margin: 0.5em 0;
+        }
+    }
+    
+    &-misleading {
+        & label {
+            margin-bottom: 1.5em;
+        }
+        
+        & input {
+            margin: 0.5em 0;
+        }
+    }
+    
+    &-ambiguous {
+        & label,
+        & input {
+            margin: 0.5em 0;
+        }
+    }
+    
+    &-clear {
+        & label {
+            margin-top: 0.75em;
+        }
+    }
+}
+
+.footer {
+    background-color: #f6f6f6;
+    border-top: 1px solid #ddd;
+    
+    &-copyright {
+        margin-bottom: 0;
+    }
+    
+    &-github {
+        margin-right: 0.07rem;
+    }
+}
