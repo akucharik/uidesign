@@ -1,7 +1,3 @@
-# UI Design (in development)
+# Fundamentals of Visual UI Design
 
-UI Design is an experimental website sharing my approach to UI design for screens. It covers my take on:
-
- - Guidelines
- - Principles
- - Tools
+[Fundamentals of Visual UI Design](https://akucharik.github.io/uifundamentals) is an experiment in sharing my basic approach to visual UI design.

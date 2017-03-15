@@ -4,18 +4,22 @@
     "email": "akucharik@gmail.com"
   },
   "description": "Learn the fundamentals of visual user interface design.",
-  "homepage": "https://akucharik.github.io/uidesign/",
+  "homepage": "https://akucharik.github.io/uifundamentals/",
   "keywords": [
     "UI",
+    "UX",
     "user interface design",
-    "design"
+    "user experience design",
+    "usability",
+    "design",
+    "fundamentals"
   ],
   "license": "MIT",
   "main": "index.html",
-  "name": "FundamentalsOfVisualUserInterfaceDesign",
+  "name": "uifundamentals",
   "repository": {
     "type": "git",
-    "url": "https://github.com/akucharik/uidesign"
+    "url": "https://github.com/akucharik/uifundamentals"
   },
   "version": "0.1.0-alpha",
   "devDependencies": {
@@ -35,6 +39,7 @@
   },
   "dependencies": {
     "foundation-sites": "^6.3.0-rc1",
+    "gsap": "^1.19.1",
     "jquery": "^3.1.1"
   }
 }

@@ -50,13 +50,16 @@ $global-font-size: 110%;
 $global-width: rem-calc(960);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #692969,
-  secondary: #496989,
-  tertiary: #cc983f,
+  primary: #066f6f,
+  secondary: #59a9c9,
+  tertiary: #ba6a6f,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
+$primary-light: #e0eee6;//dcecee
+$secondary-light: #dcecf3;
+$tertiary-color: #ba6a6f;
 $greensock-black: #262626;
 $greensock-green: #61ac27;
 $light-gray: #e6e6e6;
@@ -118,8 +121,8 @@ $header-margin-bottom: 0.8rem;
 $header-styles: (
   small: (
     'h1': ('font-size': 32),
-    'h2': ('font-size': 24),
-    'h3': ('font-size': 20),
+    'h2': ('font-size': 26),
+    'h3': ('font-size': 22),
     'h4': ('font-size': 18),
     'h5': ('font-size': 17),
     'h6': ('font-size': 16),
@@ -145,7 +148,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid #cacaca;
 $code-padding: rem-calc(0 3);
-$anchor-color: scale-color($primary-color, $lightness: 8%);
+$anchor-color: #ba6a6f;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: underline;

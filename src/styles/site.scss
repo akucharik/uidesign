@@ -21,8 +21,8 @@
 //@include foundation-dropdown;
 //@include foundation-dropdown-menu;
 //@include foundation-responsive-embed;
-@include foundation-label;
-@include foundation-media-object;
+//@include foundation-label;
+//@include foundation-media-object;
 //@include foundation-off-canvas;
 //@include foundation-orbit;
 //@include foundation-pagination;
@@ -41,38 +41,32 @@
 //@include foundation-float-classes;
 @import 'vendor/font-awesome';
 
-// Mixins
-@mixin top-bar-width {
-    width: 100%;
-        
-    @include breakpoint(medium) {
-        width: auto;
-    }
-}
-
-@mixin custom-flex-grid-row {
-    padding-left: rem-calc(20);
-    padding-right: rem-calc(20);
-}
-
 // Tags
 body {
     -webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: auto;
 }
 
+a {
+    &:focus {
+        text-decoration: none;
+    }
+}
+
 h1 {
-    color: $dark-gray;
+    color: $primary-color;
 }
 
 h2 {
     font-weight: 400;
     line-height: 1.1;
-    //margin-top: $subheader-margin-top;
+}
+
+li {
+    margin-bottom: 0.5rem;
 }
 
 section {
-    @include flex-grid-row();
     padding-top: rem-calc(30);
     padding-bottom: rem-calc(30);
 }
@@ -82,168 +76,22 @@ select {
     padding: 0 0.25rem;
 }
 
-a {
-    &:focus {
-        text-decoration: none;
-    }
+// Structural
+.section {
+    padding: 2.5em 0;
 }
 
-// Columns
-.column-full {
-    @include flex-grid-column();
-    
-    padding-right: rem-calc(30);
-    padding-left: rem-calc(30);
-    width: 100%;
-    
-    @include breakpoint(medium) {
-        padding-right: rem-calc(40);
-        padding-left: rem-calc(40);
-    }
+.subsection {
+    margin: 1.5rem 0;
 }
 
 // Misc
-.text-link
-{
-    font-weight: 600;
-}
-
-.home-banner-old {
-    position: relative;
-    z-index: 2;
-    
-    &-bkgd {
-        background: linear-gradient(to bottom, $white 20%, #adcee3 100%); /* addef3 */
-        overflow: hidden;
-        position: relative;
-    }
-    
-    &-circle {
-        border: 40px solid $secondary-color;
-        border-radius: 50%;
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        z-index: 1;
-    }
-    
-    &-section {
-        padding-top: 0;
-        padding-bottom: 0;        
-    }
-    
-    &-subsection {        
-        @include flex-grid-row();
-        justify-content: center;
-
-        @include breakpoint(large) {
-            justify-content: flex-start;
-        }
-    }
-    
-    &-text-column {
-        @include flex-grid-column(12, 50);
-        overflow: visible;
-        margin-top: 1.6rem;
-        margin-bottom: 1.6rem;
-        position: relative;
-        text-align: center;
-        
-        @include breakpoint(medium) {
-            @include flex-grid-column(8, 0);
-        }
-        
-        @include breakpoint(large) {
-            @include flex-grid-column(5, 0);
-            @include grid-column-offset(1);
-            margin-top: 0;
-            text-align: left;
-        }
-    }
-    
-    &-header {
-        max-width: none;
-        margin-bottom: 0.6em;
-        position: relative;
-        left: -2px;
-    }
-    
-    .phase {
-        @include label;
-        color: scale-color($secondary-color, $lightness: 15%);
-        font-size: rem-calc(11);
-        padding: 0 0 0 3px;
-        position: absolute;
-        top: 2px;
-        
-        @include breakpoint(large) {
-            left: 188px;
-        }
-    }
-    
-    &-text {
-        color: scale-color($secondary-color, $lightness: -15%);;
-        font-size: rem-calc(22);
-        font-weight: 400;
-        line-height: 1.2;
-        margin-bottom: 1.0em;
-    }
-    
-    &-button {
-        @include button(false, $secondary-color, 'auto', $white, solid);
-        font-size: 1.2rem;
-        margin: 0;
-        padding-right: 2.2rem;
-        padding-left: 2.2rem;
-        
-        &:hover {
-            text-decoration: none;
-        }
-    }
-    
-    
-    &-camera-column {
-        @include flex-grid-column(12, 0);
-        height: 325px;
-        position: relative;
-        
-        @include breakpoint(large) {
-            @include flex-grid-column(6, 0);
-        }
-    }
-    
-    &-graphic {
-        max-width: none;
-        position: absolute !important;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%) translate3d(0px, 300px, 0px);
-        width: 400px;
-        
-        @include breakpoint(large) {
-            left: 40%;
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-li {
-    margin-bottom: 0.5rem;
-}
-
 .callout {
+    background-color: transparent;
     border-top: 0 none;
     border-right: 0 none;
     border-bottom: 0 none;
-    border-left: 5px solid red;
+    border-left: 5px solid $secondary-color;
     color: #777;
     font-family: droid-serif, serif;
     font-size: 130%;
@@ -253,52 +101,55 @@ li {
     -webkit-font-smoothing: antialiased;
     
     & > p {
-        line-height: 1.3;
+        line-height: 1.4;
     }
 }
 
-.section {
-    padding: 2.5em 0;
-}
-
-.subsection {
-    margin: 1.5rem 0;
-//    @include flex-grid-row();
-//    margin: 2.0rem -1.875rem 0 !important;
+.scrollto-arrow {
+    color: $tertiary-color;
+    cursor: pointer;
 }
 
 .home-banner {
-    background-color: #eee;
-    padding: 3.0em 0;
+    background: #eaeaea url('../images/homeBannerBkgd.jpg') 50% 0 no-repeat; //#e1f0f5 e6edf0
+    border-bottom: 1px solid #ccc;
+    box-shadow: inset 0 -10px 25px -8px rgba(0,0,0,0.15);
+    position: relative;
     text-align: center;
-}
-
-.site {
-    &-title {
-        line-height: 1.1;
-        position: relative;
+    
+    &-logo {
+        margin: 0 auto;
+        width: 296px;
         
-        &-of {
-            font-size: 50%;
-            position: relative;
-            top: -0.05em;
-            left: -0.1em;
+        @include breakpoint(medium) {
+            width: auto;
         }
     }
-
+    
     &-description {
         font-size: 115%;
-        margin-top: 2.5em;
+        margin: 0.5em 0 1.0em;
         text-align: left;
         
         @include breakpoint(large) {
             margin-left: auto;
             margin-right: auto;
-            width: 33em;
+            max-width: 33em;
         }
     }
 }
-//
+
+.zone {
+    background-color: #ddd;
+    margin-bottom: 1.5rem;
+    padding: 1.7em 2.0em;
+    position: relative;
+    
+    & > label:first-child {
+        margin-top: 0;
+    }
+}
+
 //.icon {
 //    background-color: #ddd;
 //    height: 100px;
@@ -313,24 +164,7 @@ li {
 //    transform: translate(-50%, -50%);
 //    width: 26px;
 //}
-
-
-.zone {
-    background-color: #ddd;
-    margin-bottom: 1.5rem;
-    padding: 1.7em 2.0em;
-    position: relative;
-    
-//    @include breakpoint(large) {
-//        margin-bottom: 1.0rem;
-//    }
-    
-    & > label:first-child {
-        margin-top: 0;
-    }
-}
-
-
+//
 //.letters-equal-icon .is-1 {
 //    top: 30%;
 //    left: 30%;
@@ -396,6 +230,9 @@ li {
 //}
 
 .idea {
+    background: linear-gradient(to bottom, $white 20%, #f6f6f6 100%); /* addef3 */
+    border-bottom: 1px solid #eee;
+    
     &-next {
         font-size: rem-calc(72);
         line-height: 1;
@@ -405,11 +242,10 @@ li {
 }
 
 .grouping {
-    background-color: #f3f3f3;
+    
 }
 
 .letters {
-    //@include flex-grid-row();
     
     h3 {
         margin-bottom: 0.5rem;
@@ -420,7 +256,8 @@ li {
     }
     
     &-example {
-        font-size: rem-calc(48);// 4.0em;
+        background-color: scale-color($primary-light, $lightness: 20%);
+        font-size: rem-calc(48);
         height: 6.0em;
         line-height: 1;
         margin-right: auto;
@@ -441,20 +278,7 @@ li {
         }
     }
     
-    &-equal {
-//        @include flex-grid-column(12);
-//        
-//        @include breakpoint(large) {
-//            @include flex-grid-column(4);
-//        }
-    }
-    
     &-horizontal {
-//        @include flex-grid-column(12);
-//        
-//        @include breakpoint(large) {
-//            @include flex-grid-column(4);
-//        }
         
         & .letter {
             width: 0.4em;
@@ -467,11 +291,6 @@ li {
     }
     
     &-vertical {
-//        @include flex-grid-column(12);
-//        
-//        @include breakpoint(large) {
-//            @include flex-grid-column(4);
-//        }
         
         & .letter-1,
         & .letter-2 {
@@ -502,13 +321,8 @@ li {
         margin-bottom: 0.5rem;
     }
     
-//    & .zone {
-//        @include breakpoint(large) {
-//            height: 26.0em;
-//        }
-//    }
-    
     &-example {
+        background-color: scale-color($secondary-light, $lightness: 50%);
         margin-right: auto;
         margin-left: auto;
         max-width: 20rem;
@@ -554,7 +368,8 @@ li {
 }
 
 .footer {
-    background-color: #eee;
+    background-color: #f6f6f6;
+    border-top: 1px solid #ddd;
     
     &-copyright {
         margin-bottom: 0;
