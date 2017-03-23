@@ -2,9 +2,9 @@ import TweenLite from 'gsap/TweenLite';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import { scrollItems } from './data';
 
-scrollItems.forEach(function (item) {
-    document.querySelector(item.trigger).addEventListener('click', function () {
+scrollItems.forEach((item) => {
+    document.querySelector(item.trigger).addEventListener('click', () => {
         event.preventDefault();
-        TweenLite.to(window, 0.7, { scrollTo: item.target, ease: Power2.easeOut });
+        TweenLite.to(window, 0.7, { scrollTo: item.target, ease: window.Power2.easeOut });
     })
 });
