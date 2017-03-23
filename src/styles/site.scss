@@ -85,6 +85,19 @@ select {
     margin: 1.5rem 0;
 }
 
+.footer {
+    background-color: #f6f6f6;
+    border-top: 1px solid #ddd;
+    
+    &-copyright {
+        margin-bottom: 0;
+    }
+    
+    &-github {
+        margin-right: 0.1rem;
+    }
+}
+
 // Misc
 .callout {
     background-color: transparent;
@@ -105,11 +118,57 @@ select {
     }
 }
 
-.scrollto-arrow {
-    color: $tertiary-color;
+//.icon {
+//    background-color: #ddd;
+//    height: 100px;
+//    position: relative;
+//    width: 100px;
+//}
+//
+//.icon-symbol {
+//    background-color: #999;
+//    height: 26px;
+//    position: absolute;
+//    transform: translate(-50%, -50%);
+//    width: 26px;
+//}
+
+.permalink {
     cursor: pointer;
+    
+    &-anchor {
+        color: $medium-gray !important;
+        opacity: 0;
+        text-decoration: none;
+        
+        &:hover {
+            color: $medium-gray;
+        }
+    }
+    
+    &-icon {
+        transform: scale(-1, 1) translate(0, 10%);
+    }
+        
+    &:hover {
+        & .permalink-anchor {
+            opacity: 1;
+        }
+    }
 }
 
+.zone {
+    background-color: #ddd;
+    margin-bottom: 1.5rem;
+    padding: 1.7em 2.0em;
+    position: relative;
+    
+    & > label:first-child {
+        margin-top: 0;
+    }
+}
+
+// Content
 .home-banner {
     background: #eaeaea url('../images/homeBannerBkgd.jpg') 50% 0 no-repeat; //#e1f0f5 e6edf0
     border-bottom: 1px solid #ccc;
@@ -139,105 +198,26 @@ select {
     }
 }
 
-.zone {
-    background-color: #ddd;
-    margin-bottom: 1.5rem;
-    padding: 1.7em 2.0em;
-    position: relative;
-    
-    & > label:first-child {
-        margin-top: 0;
-    }
-}
-
-//.icon {
-//    background-color: #ddd;
-//    height: 100px;
-//    position: relative;
-//    width: 100px;
-//}
-//
-//.icon-symbol {
-//    background-color: #999;
-//    height: 26px;
-//    position: absolute;
-//    transform: translate(-50%, -50%);
-//    width: 26px;
-//}
-//
-//.letters-equal-icon .is-1 {
-//    top: 30%;
-//    left: 30%;
-//}
-//
-//.letters-equal-icon .is-2 {
-//    top: 30%;
-//    left: 70%;
-//}
-//
-//.letters-equal-icon .is-3 {
-//    top: 70%;
-//    left: 30%;
-//}
-//
-//.letters-equal-icon .is-4 {
-//    top: 70%;
-//    left: 70%;
-//}
-//
-//
-//
-//.letters-horizontal-icon .is-1 {
-//    top: 30%;
-//    left: 35%;
-//}
-//
-//.letters-horizontal-icon .is-2 {
-//    top: 30%;
-//    left: 65%;
-//}
-//
-//.letters-horizontal-icon .is-3 {
-//    top: 70%;
-//    left: 35%;
-//}
-//
-//.letters-horizontal-icon .is-4 {
-//    top: 70%;
-//    left: 65%;
-//}
-//
-//
-//
-//.letters-vertical-icon .is-1 {
-//    top: 35%;
-//    left: 30%;
-//}
-//
-//.letters-vertical-icon .is-2 {
-//    top: 35%;
-//    left: 70%;
-//}
-//
-//.letters-vertical-icon .is-3 {
-//    top: 65%;
-//    left: 30%;
-//}
-//
-//.letters-vertical-icon .is-4 {
-//    top: 65%;
-//    left: 70%;
-//}
-
 .idea {
     background: linear-gradient(to bottom, $white 20%, #f6f6f6 100%); /* addef3 */
     border-bottom: 1px solid #eee;
     
     &-next {
-        font-size: rem-calc(72);
+        font-size: rem-calc(48);
         line-height: 1;
+        margin-top: 1.2rem;
         margin-bottom: -0.5rem;
         text-align: center;
+        
+        &-link {
+            text-decoration: none !important;
+        }
+        
+        &-text {
+            font-size: rem-calc(42);
+            position: relative;
+            top: -3px;
+        }
     }
 }
 
@@ -305,6 +285,70 @@ select {
     
 }
 
+//.letters-equal-icon .is-1 {
+//    top: 30%;
+//    left: 30%;
+//}
+//
+//.letters-equal-icon .is-2 {
+//    top: 30%;
+//    left: 70%;
+//}
+//
+//.letters-equal-icon .is-3 {
+//    top: 70%;
+//    left: 30%;
+//}
+//
+//.letters-equal-icon .is-4 {
+//    top: 70%;
+//    left: 70%;
+//}
+//
+//
+//
+//.letters-horizontal-icon .is-1 {
+//    top: 30%;
+//    left: 35%;
+//}
+//
+//.letters-horizontal-icon .is-2 {
+//    top: 30%;
+//    left: 65%;
+//}
+//
+//.letters-horizontal-icon .is-3 {
+//    top: 70%;
+//    left: 35%;
+//}
+//
+//.letters-horizontal-icon .is-4 {
+//    top: 70%;
+//    left: 65%;
+//}
+//
+//
+//
+//.letters-vertical-icon .is-1 {
+//    top: 35%;
+//    left: 30%;
+//}
+//
+//.letters-vertical-icon .is-2 {
+//    top: 35%;
+//    left: 70%;
+//}
+//
+//.letters-vertical-icon .is-3 {
+//    top: 65%;
+//    left: 30%;
+//}
+//
+//.letters-vertical-icon .is-4 {
+//    top: 65%;
+//    left: 70%;
+//}
+
 .letter {
     display: inline-block;
     padding: 0.6em 0;
@@ -364,18 +408,5 @@ select {
         & label {
             margin-top: 0.75em;
         }
-    }
-}
-
-.footer {
-    background-color: #f6f6f6;
-    border-top: 1px solid #ddd;
-    
-    &-copyright {
-        margin-bottom: 0;
-    }
-    
-    &-github {
-        margin-right: 0.07rem;
     }
 }

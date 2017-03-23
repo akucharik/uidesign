@@ -30,7 +30,7 @@
                     <img class="home-banner-logo" src="images/logo.png" width="342" height="180" alt="Fundamentals of Visual User Interface Design logo">
                 </h1>
                 <p class="home-banner-description">The fundamentals of visual user interface (VUI) design are fairly straightforward. 
-                    They can be easily learned, applied to nearly any visual user interface, and usually improve the ease in which that interface is consumed. 
+                    They can be easily learned, applied to nearly any visual user interface, and usually improve the ease with which that interface is consumed. 
                     How can such wide-reaching claims be true? Because of one simple fact&mdash;we're all human, and for the most part we function in a similar way.</p>
             </div>
         </div>
@@ -44,20 +44,25 @@
                 <div class="callout">
                     <p>The visual representation of content is most effective when it accurately reflects the intended underlying conceptual meaning of that content.</p>
                 </div>
-                <p>This means that a visual user interface is nothing more than a medium being used to communicate an idea, and that idea exists and can be understood without any visual representation. 
-                    Therefore, a detailed understanding of the underlying idea is necessary in order to create a visual representation that accurately communicates that idea.
-                    Once an idea is thoroughly understood a visual user interface can be designed that reasonably communicates that idea.</p>
+                <p>This means that a visual user interface is nothing more than a medium being used to communicate an idea, and that idea exists and can be understood without any visual representation.
+                    Therefore, it is most effective to thoroughly understand the idea first, and then design a visual user interface that accurately communicates that idea.
                 <p>Now let's start building our VUI design toolkit and see how this works.</p>
-                <p class="idea-next"><i id="navStart" class="fa fa-arrow-circle-down scrollto-arrow"></i></p>
+                <p class="idea-next">
+                    <a id="navStart" href="#anchorGrouping" class="idea-next-link">
+                        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> <span class="idea-next-text">Start learning</span>
+                    </a>
+                </p>
             </div>
         </div>
     </section>
     
-    <a id="anchorStart" href="#"></a>
+    
     <section class="section grouping">
         <div class="row">
             <div class="columns small-12">
-                <h1>Grouping</h1>
+                <h1 id="headerGrouping" class="permalink">
+                    Grouping <a id="anchorGrouping" href="#anchorGrouping" class="permalink-anchor" title="permalink" aria-label="Link to the section &quot;Grouping&quot;"><i class="fa fa-link permalink-icon" aria-hidden="true"></i></a>
+                </h1>
                 <p>One principle of visual user interface design is grouping.
                     Grouping is simply the process of creating visual relationships. 
                     When properly used, grouping helps to communicate meaning by giving users visual cues that mirror the content's conceptual relationships. 
@@ -176,8 +181,8 @@
                         Weak content relationships directly impact usability and cause users to expend more mental effort figuring out what is being communicated.
                         Let's consider a simple form where a label such as <em>First name</em> is used to describe the empty form field, in this case a textbox, where the user will enter a name.</p>
                     <div class="zone forms-example forms-first-name">    
-                        <label>First Name</label>
-                        <input type="text">
+                        <label for="firstName">First name</label>
+                        <input id="firstName" type="text">
                     </div>
                     <p>Is the visual representation of the relationship between the <em>First name</em> label and the form field misleading, weak, or strong? 
                         In this case it can be difficult to answer because there aren't any other visual elements to influence what's being communicated other than the encompassing box. 
@@ -189,17 +194,17 @@
                             After all, <em>Age</em> looks like it could be related to the form field above it.
                             Confusion and frustration arise when visual relationships do not match the underlying conceptual relationships.</p>
                         <div class="zone forms-example">
-                            <label>First name</label>
-                            <input type="text">
+                            <label for="firstNameMisleading">First name</label>
+                            <input id="firstNameMisleading" type="text">
 
-                            <label>Age</label>
-                            <input type="text">
+                            <label for="ageMisleading">Age</label>
+                            <input id="ageMisleading" type="text">
 
-                            <label>Height</label>
-                            <input type="text">
+                            <label for="heightMisleading">Height</label>
+                            <input id="heightMisleading" type="text">
 
-                            <label>Eye color</label>
-                            <input type="text">
+                            <label for="eyeColorMisleading">Eye color</label>
+                            <input id="eyeColorMisleading" type="text">
                         </div>
                     </div>
                     <div class="forms-ambiguous">
@@ -207,17 +212,17 @@
                         <p data-equalizer-watch>In this example, the spacing is even between the labels and form fields. 
                             This spacing creates no visual relationships and requires users to expend additional mental effort deciding if the text is associated with the form field <em>above</em> or <em>below</em> it.</p>
                         <div class="zone forms-example">
-                            <label>First name</label>
-                            <input type="text">
+                            <label for="firstNameAmbiguous">First name</label>
+                            <input id="firstNameAmbiguous" type="text">
 
-                            <label>Age</label>
-                            <input type="text">
+                            <label for="ageAmbiguous">Age</label>
+                            <input id="ageAmbiguous" type="text">
 
-                            <label>Height</label>
-                            <input type="text">
+                            <label for="heightAmbiguous">Height</label>
+                            <input id="heightAmbiguous" type="text">
 
-                            <label>Eye color</label>
-                            <input type="text">
+                            <label for="eyeColorAmbiguous">Eye color</label>
+                            <input id="eyeColorAmbiguous" type="text">
                         </div>
                     </div>
                     <div class="forms-clear">
@@ -226,17 +231,17 @@
                             In this case the labels are visually related to the form fields via proximity, and our brains more easily put together that conceptual relationship.
                             While not the only solution, this visual representation falls in the clear continuum.</p>
                         <div class="zone forms-example">
-                            <label>First name</label>
-                            <input type="text">
+                            <label for="firstNameClear">First name</label>
+                            <input id="firstNameClear" type="text">
 
-                            <label>Age</label>
-                            <input type="text">
+                            <label for="ageClear">Age</label>
+                            <input id="ageClear" type="text">
 
-                            <label>Height</label>
-                            <input type="text">
+                            <label for="heightClear">Height</label>
+                            <input id="heightClear" type="text">
 
-                            <label>Eye color</label>
-                            <input type="text">
+                            <label for="eyeColorClear">Eye color</label>
+                            <input id="eyeColorClear" type="text">
                         </div>
                     </div>
                 </div>
