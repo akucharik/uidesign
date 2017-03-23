@@ -4,6 +4,7 @@ var babelify = require('babelify');
 var browserify = require('browserify');
 var buffer = require('vinyl-buffer');
 var del = require('del');
+var eslint = require('gulp-eslint');
 var gulp = require('gulp');
 var gulpif = require('gulp-if');
 var rename = require('gulp-rename');
@@ -14,25 +15,17 @@ var uglify = require('gulp-uglify');
 var config = {
     environment: 'production',
     development: {
-        lint: true,
         minify: false,
         sourcemaps: true
     },
     production: {
-        lint: false,
         minify: true,
         sourcemaps: false
     },
     scripts: {
         destDirectory: './scripts',
         destFileName: 'site.js',
-        source: './src/scripts/site.js',
-        vendor: {
-            source: [
-                //'./node_modules/jquery/dist/jquery.min.js',
-                //'./node_modules/foundation-sites/dist/js/foundation.min.js'
-            ]
-        }
+        source: './src/scripts/site.js'
     },
     styles: {
         destDirectory: './styles',
@@ -45,37 +38,29 @@ var config = {
     }
 };
 
-if (config.environment === 'production') {
-    process.env.NODE_ENV = config.environment;
-}
+process.env.NODE_ENV = config.environment;
 
-// set up default task
 gulp.task('default', ['build']);
 
-gulp.task('build', ['compile:styles', 'compile:scripts'], function () {
+gulp.task('build', ['compile:styles', 'compile:scripts'], () => {
     return;
 });
 
-gulp.task('clean:scripts', function () {
+gulp.task('clean:scripts', () => {
     return del(config.scripts.destDirectory);
 });
 
-gulp.task('clean:styles', function () {
+gulp.task('clean:styles', () => {
     return del(config.styles.destDirectory);
 });
 
-gulp.task('copy:vendor:scripts', ['clean:scripts'], function () {
-    return gulp.src(config.scripts.vendor.source)
-        .pipe(gulp.dest(config.scripts.destDirectory));
-});
-
-gulp.task('compile:scripts', ['clean:scripts', 'copy:vendor:scripts'], function () {
+gulp.task('compile:scripts', ['clean:scripts', 'lint'], () => {
     return browserify(config.scripts.source, { 
             debug: config[config.environment].sourcemaps,
             transform: babelify
         })
         .bundle()
-        .on('error', function (error) { 
+        .on('error', (error) => { 
             console.log('Error: ' + error.message); 
         })
         .pipe(source(config.scripts.destFileName))
@@ -87,7 +72,7 @@ gulp.task('compile:scripts', ['clean:scripts', 'copy:vendor:scripts'], function 
         .pipe(gulp.dest(config.scripts.destDirectory));
 });
 
-gulp.task('compile:styles', ['clean:styles'], function () {
+gulp.task('compile:styles', ['clean:styles'], () => {
     return gulp.src(config.styles.source)
         .pipe(sass({
             includePaths: config.styles.paths,
@@ -95,4 +80,11 @@ gulp.task('compile:styles', ['clean:styles'], function () {
         }).on('error', sass.logError))
         .pipe(gulpif(config[config.environment].minify, rename({suffix: '.min'})))
         .pipe(gulp.dest(config.styles.destDirectory));
+});
+
+gulp.task('lint', () => {
+    return gulp.src(['./src/scripts/*.js','!node_modules/**'])
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError());
 });
