@@ -2,6 +2,8 @@ import TweenLite from 'gsap/TweenLite';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import { scrollItems } from './data';
 
+document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+
 scrollItems.forEach((item) => {
     document.querySelector(item.trigger).addEventListener('click', () => {
         event.preventDefault();

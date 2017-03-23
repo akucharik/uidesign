@@ -1,5 +1,8 @@
 // ScrollTo
 export const scrollItems = [{
-    target: '#anchorStart',
+    target: '#anchorGrouping',
     trigger: '#navStart'
+}, {
+    target: '#anchorGrouping',
+    trigger: '#headerGrouping'
 }];
