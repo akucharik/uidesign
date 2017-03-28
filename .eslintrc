@@ -4,6 +4,10 @@
     "browser": true
   },
   "extends": "eslint:recommended",
+  "globals": {
+    "ga": true,
+    "Power2": true
+  },
   "rules": {
     "no-console": ["error", { allow: ["warn", "error"] }],
     "no-unused-vars": 1
