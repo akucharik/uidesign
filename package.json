@@ -37,6 +37,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "foundation-sites": "^6.3.0-rc1",
     "gsap": "^1.19.1"
   }
