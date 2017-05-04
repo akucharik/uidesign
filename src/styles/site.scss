@@ -1,12 +1,13 @@
 @import 'settings';
+@import 'font-awesome';
 @import 'foundation';
 @include foundation-global-styles;
 //@include foundation-grid;
-@include foundation-flex-grid;
-@include foundation-flex-classes;
+//@include foundation-flex-grid;
+//@include foundation-flex-classes;
 @include foundation-typography;
 @include foundation-forms;
-@include foundation-button;
+//@include foundation-button;
 //@include foundation-accordion;
 //@include foundation-accordion-menu;
 //@include foundation-badge;
@@ -39,7 +40,6 @@
 //@include foundation-top-bar;
 @include foundation-visibility-classes;
 //@include foundation-float-classes;
-@import 'vendor/font-awesome';
 
 // Tags
 body {
@@ -77,6 +77,14 @@ select {
 }
 
 // Structural
+.row {
+    @include flex-grid-row();
+}
+
+.column-full {
+    @include flex-grid-column(12);
+}
+
 .section {
     padding: 2.5em 0;
 }
@@ -95,6 +103,15 @@ select {
     
     &-github {
         margin-right: 0.1rem;
+    }
+}
+
+// Icons
+.start-icon {
+    @extend .#{$fa-css-prefix};
+    
+    &:before {
+        @extend .#{$fa-css-prefix}-arrow-circle-down:before
     }
 }
 

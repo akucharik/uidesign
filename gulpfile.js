@@ -4,9 +4,9 @@ var babelify = require('babelify');
 var browserify = require('browserify');
 var buffer = require('vinyl-buffer');
 var del = require('del');
-var eslint = require('gulp-eslint');
 var gulp = require('gulp');
 var gulpif = require('gulp-if');
+var lint = require('gulp-eslint');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var source = require('vinyl-source-stream');
@@ -30,9 +30,9 @@ var config = {
     styles: {
         destDirectory: './styles',
         paths: [
-            './src/styles', 
+            './src/styles',
             './node_modules/foundation-sites/scss',
-            './node_modules/normalize-scss/sass'
+            './node_modules/font-awesome/scss'
         ],
         source: './src/styles/site.scss'
     }
@@ -84,7 +84,7 @@ gulp.task('compile:styles', ['clean:styles'], () => {
 
 gulp.task('lint', () => {
     return gulp.src(['./src/scripts/*.js','!node_modules/**'])
-        .pipe(eslint())
-        .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
+        .pipe(lint())
+        .pipe(lint.format())
+        .pipe(lint.failAfterError());
 });
